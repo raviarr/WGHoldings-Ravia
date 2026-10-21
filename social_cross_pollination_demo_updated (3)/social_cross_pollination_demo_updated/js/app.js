@@ -1,0 +1,3 @@
+const clients=["Client A","Client B","Client C","Client D","Client E","Client F","Client G","Client H","Client I","Client J","Client K","Client L"];
+const matrix=document.getElementById("matrix");
+clients.forEach((source,i)=>{clients.forEach((target,j)=>{if(i!==j){const el=document.createElement("div");el.className="cell";el.innerHTML=`<span class="arrow">SOURCE</span><strong>${source}</strong><span class="arrow">→ TARGET</span><strong>${target}</strong>`;matrix.appendChild(el)}})});
